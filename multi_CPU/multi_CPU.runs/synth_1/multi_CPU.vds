@@ -1,0 +1,517 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun 15 16:47:18 2023
+# Process ID: 10932
+# Current directory: D:/study/pocc/code/multi_CPU/multi_CPU.runs/synth_1
+# Command line: vivado.exe -log multi_CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source multi_CPU.tcl
+# Log file: D:/study/pocc/code/multi_CPU/multi_CPU.runs/synth_1/multi_CPU.vds
+# Journal file: D:/study/pocc/code/multi_CPU/multi_CPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source multi_CPU.tcl -notrace
+Command: synth_design -top multi_CPU -part xc7a15tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a15t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a15t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20516
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1165.930 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'multi_CPU' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/multi_CPU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'insMem' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/insMem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'insMem' (2#1) [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/insMem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dataMem' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dataMem' (3#1) [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'wdata_addr' does not match port width (10) of module 'dataMem' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/multi_CPU.v:129]
+WARNING: [Synth 8-689] width (32) of port connection 'rdata_addr' does not match port width (10) of module 'dataMem' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/multi_CPU.v:132]
+INFO: [Synth 8-6157] synthesizing module 'Regs' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/Regs.v:23]
+WARNING: [Synth 8-567] referenced signal 'regs' should be on the sensitivity list [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/Regs.v:86]
+WARNING: [Synth 8-567] referenced signal 'regs' should be on the sensitivity list [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/Regs.v:116]
+WARNING: [Synth 8-567] referenced signal 'wdata' should be on the sensitivity list [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/Regs.v:124]
+WARNING: [Synth 8-567] referenced signal 'regs' should be on the sensitivity list [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/Regs.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'Regs' (4#1) [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/Regs.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/ALU.v:23]
+	Parameter rXOR bound to: 5'b00001 
+	Parameter rOR bound to: 5'b00010 
+	Parameter rSLL bound to: 5'b00011 
+	Parameter rSRL bound to: 5'b00100 
+	Parameter rSRA bound to: 5'b00101 
+	Parameter rADD bound to: 5'b00110 
+	Parameter XORi bound to: 5'b01011 
+	Parameter ORi bound to: 5'b01100 
+	Parameter SLLi bound to: 5'b01101 
+	Parameter SRLi bound to: 5'b01110 
+	Parameter SRAi bound to: 5'b01111 
+	Parameter ADDi bound to: 5'b10000 
+	Parameter ADD_addr bound to: 5'b11101 
+	Parameter ADD_J bound to: 5'b11110 
+	Parameter CMP bound to: 5'b11111 
+	Parameter ADD_B bound to: 5'b11100 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/ALU.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CU' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/CU.v:516]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/CU.v:596]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/CU.v:616]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/CU.v:588]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/CU.v:721]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/CU.v:773]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (6#1) [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/CU.v:516]
+WARNING: [Synth 8-689] width (10) of port connection 'set_addr' does not match port width (1) of module 'CU' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/multi_CPU.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'multi_CPU' (7#1) [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/multi_CPU.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1494.492 ; gain = 328.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1494.492 ; gain = 328.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a15tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1494.492 ; gain = 328.562
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a15tcsg324-1
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1023]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1022]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1021]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1020]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1019]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1018]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1017]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1016]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1015]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1014]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1013]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1012]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1011]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1010]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1009]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1008]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1007]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1006]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1005]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1004]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1003]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1002]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1001]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[1000]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[999]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[998]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[997]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[996]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[995]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[994]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[993]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[992]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[991]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[990]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[989]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[988]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[987]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[986]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[985]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[984]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[983]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[982]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[981]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[980]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[979]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[978]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[977]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[976]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[975]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[974]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[973]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[972]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[971]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[970]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[969]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[968]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[967]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[966]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[965]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[964]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[963]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[962]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[961]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[960]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[959]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[958]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[957]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[956]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[955]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[954]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[953]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[952]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[951]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[950]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[949]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[948]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[947]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[946]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[945]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[944]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[943]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[942]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[941]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[940]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[939]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[938]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[937]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[936]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[935]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[934]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[933]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[932]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[931]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[930]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[929]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[928]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[927]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[926]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[925]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg[924]' [D:/study/pocc/code/multi_CPU/multi_CPU.srcs/sources_1/new/dataMem.v:83]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:04:48 ; elapsed = 00:04:52 . Memory (MB): peak = 1793.453 ; gain = 627.523
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 10    
+	  10 Input   32 Bit        Muxes := 1     
+	  17 Input   32 Bit        Muxes := 1     
+	   7 Input   20 Bit        Muxes := 1     
+	   6 Input   12 Bit        Muxes := 1     
+	   7 Input   12 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 3     
+	  17 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1022  
+	   4 Input    8 Bit        Muxes := 573   
+	   7 Input    5 Bit        Muxes := 8     
+	   2 Input    5 Bit        Muxes := 2     
+	   6 Input    5 Bit        Muxes := 1     
+	  17 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 62    
+	   2 Input    1 Bit        Muxes := 1131  
+	   4 Input    1 Bit        Muxes := 1021  
+	   7 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 45 (col length:60)
+BRAMs: 50 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port ins_addr[9] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_addr[8] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_addr[7] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_addr[6] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_addr[5] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_addr[4] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_addr[3] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_addr[2] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_addr[1] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_addr[0] in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port set_addr in module CU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jal_offset[19] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jal_offset[18] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jal_offset[17] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jal_offset[16] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jal_offset[15] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jal_offset[14] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jal_offset[13] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jal_offset[12] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jal_offset[11] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port jal_offset[10] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B_offset[11] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B_offset[10] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_addr[9] in module insMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_addr[8] in module insMem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ins_addr[7] in module insMem is either unconnected or has no load
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][31]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][31]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][31]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][31]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][31]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][31]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][29]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][29]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][29]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][29]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][29]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][29]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][30]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][30]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][30]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][30]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][30]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][30]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][23]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][23]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][23]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][23]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][23]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][23]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][24]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][24]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][24]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][24]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][24]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][24]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][25]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][25]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][25]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][25]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][25]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][25]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][26]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][26]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][26]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][26]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][26]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][26]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][27]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][27]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][27]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][27]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][27]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][27]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][28]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][28]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][28]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][28]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][28]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][28]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][0]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][0]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][0]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][0]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][0]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][0]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][1]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][1]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][1]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][1]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][1]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][1]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][2]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][2]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][2]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][2]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][2]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][2]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][3]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][3]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][3]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][3]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][3]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][3]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][4]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][4]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][4]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][4]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][4]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][4]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][5]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][5]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][5]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][5]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][5]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][5]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][6]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][6]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][6]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][6]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][6]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[11][6]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][7]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[14][7]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][7]__0  is always disabled
+WARNING: [Synth 8-264] enable of latch regs/\regs_reg[13][7]__0  is always disabled
+INFO: [Common 17-14] Message 'Synth 8-264' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-264' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'cu/jal_offset_reg[5]' (LD) to 'cu/jal_offset_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cu/jal_offset_reg[6]' (LD) to 'cu/jal_offset_reg[7]'
+INFO: [Synth 8-3886] merging instance 'cu/jal_offset_reg[7]' (LD) to 'cu/jal_offset_reg[4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\cu/jal_offset_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\cu/jal_offset_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\cu/jal_offset_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\cu/jal_offset_reg[0] )
+INFO: [Synth 8-3886] merging instance 'cu/cmpraddr2_reg[0]' (LD) to 'cu/cmpraddr2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cu/cmpraddr2_reg[1]' (LD) to 'cu/cmpraddr2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cu/cmpraddr2_reg[2]' (LD) to 'cu/cmpraddr2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cu/cmpraddr2_reg[3]' (LD) to 'cu/cmpraddr2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'cu/cmpraddr2_reg[4]' (LD) to 'cu/cmpraddr1_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cu/cmpraddr1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'cu/cmpraddr1_reg[1]' (LD) to 'cu/cmpraddr1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cu/cmpraddr1_reg[2]' (LD) to 'cu/cmpraddr1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cu/cmpraddr1_reg[3]' (LD) to 'cu/cmpraddr1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'cu/imm_reg[1]' (LD) to 'cu/imm_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cu/imm_reg[2]' (LD) to 'cu/imm_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cu/imm_reg[3]' (LD) to 'cu/imm_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cu/imm_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cu/imm_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cu/imm_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cu/imm_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cu/imm_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cu/imm_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cu/imm_reg[11] )
+INFO: [Synth 8-3886] merging instance 'cu/raddr2_reg[3]' (LD) to 'cu/raddr2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'cu/offset_reg[0]' (LD) to 'cu/offset_reg[1]'
+INFO: [Synth 8-3886] merging instance 'cu/offset_reg[1]' (LD) to 'cu/offset_reg[11]'
+INFO: [Synth 8-3886] merging instance 'cu/offset_reg[8]' (LD) to 'cu/offset_reg[9]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:31 ; elapsed = 00:06:07 . Memory (MB): peak = 1793.453 ; gain = 627.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|insMem      | p_0_out    | 128x8         | LUT            | 
+|insMem      | p_0_out    | 128x8         | LUT            | 
+|insMem      | p_0_out    | 128x8         | LUT            | 
+|insMem      | p_0_out    | 128x8         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:32 ; elapsed = 00:06:07 . Memory (MB): peak = 1793.453 ; gain = 627.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:32 ; elapsed = 00:06:08 . Memory (MB): peak = 1793.453 ; gain = 627.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:35 ; elapsed = 00:06:10 . Memory (MB): peak = 1793.453 ; gain = 627.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:35 ; elapsed = 00:06:10 . Memory (MB): peak = 1793.453 ; gain = 627.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:35 ; elapsed = 00:06:10 . Memory (MB): peak = 1793.453 ; gain = 627.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:35 ; elapsed = 00:06:10 . Memory (MB): peak = 1793.453 ; gain = 627.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:35 ; elapsed = 00:06:10 . Memory (MB): peak = 1793.453 ; gain = 627.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:35 ; elapsed = 00:06:10 . Memory (MB): peak = 1793.453 ; gain = 627.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUFT |     1|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     1|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:35 ; elapsed = 00:06:10 . Memory (MB): peak = 1793.453 ; gain = 627.523
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1271 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:35 ; elapsed = 00:06:12 . Memory (MB): peak = 1793.453 ; gain = 627.523
+Synthesis Optimization Complete : Time (s): cpu = 00:05:35 ; elapsed = 00:06:12 . Memory (MB): peak = 1793.453 ; gain = 627.523
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.453 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 234 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:41 ; elapsed = 00:06:20 . Memory (MB): peak = 1793.453 ; gain = 627.523
+INFO: [Common 17-1381] The checkpoint 'D:/study/pocc/code/multi_CPU/multi_CPU.runs/synth_1/multi_CPU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file multi_CPU_utilization_synth.rpt -pb multi_CPU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 15 16:53:51 2023...

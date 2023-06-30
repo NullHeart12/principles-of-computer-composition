@@ -1,0 +1,10 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+add result:8a66
+sub result:0424
+and result:0001
+or result:0001
+sll result:1d14
+srl result:11d1
+sla result:1d14
+sra result:11d1

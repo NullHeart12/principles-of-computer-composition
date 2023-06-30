@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Jun 10 10:11:50 2023
+# Process ID: 32636
+# Current directory: D:/study/principles of computer composition/code/MUX4_1/MUX4_1.runs/synth_1
+# Command line: vivado.exe -log MUX4_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MUX4_1.tcl
+# Log file: D:/study/principles of computer composition/code/MUX4_1/MUX4_1.runs/synth_1/MUX4_1.vds
+# Journal file: D:/study/principles of computer composition/code/MUX4_1/MUX4_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MUX4_1.tcl -notrace

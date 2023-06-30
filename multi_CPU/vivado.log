@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jun 21 10:45:09 2023
+# Process ID: 12576
+# Current directory: D:/study/pocc/code/multi_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18588 D:\study\pocc\code\multi_CPU\multi_CPU.xpr
+# Log file: D:/study/pocc/code/multi_CPU/vivado.log
+# Journal file: D:/study/pocc/code/multi_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/study/pocc/code/multi_CPU/multi_CPU.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/study/pocc/code/multi_CPU/multi_CPU.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1162.723 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 21 10:46:00 2023...
