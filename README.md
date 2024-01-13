@@ -1,6 +1,6 @@
 # principles-of-computer-composition/hfut/合肥工业大学计算机组成原理实验及课设
 <br>20条RISC-V指令设计
-<br>感觉写的勉勉强强，冲突没有用多路选择器来解决，直接使用了增加接口
+<br>感觉写的勉勉强强，不能烧录到ego1板子上
 <br>
 <br>
 <br>
