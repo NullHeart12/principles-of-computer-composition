@@ -1,7 +1,7 @@
 # principles-of-computer-composition/hfut/合肥工业大学计算机组成原理实验及课设
 <br>20条RISC-V指令设计
 <br>感觉写的勉勉强强，不能烧录到ego1板子上
-<br>貌似找到为啥不能烧到开发板的原因了。。。
+<br>貌似找到为啥不能烧到开发板的原因了。。。所以老师为什么要布置这个任务呢？hh，win了
 <br>如下图：
 <br>![image](https://github.com/user-attachments/assets/c6027f06-41ec-46cd-9270-a95c281ba47e)
 <br>
